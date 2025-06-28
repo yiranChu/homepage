@@ -473,6 +473,64 @@ footer {
     color: white;
 }
 
+/* Work in Progress 专用样式 */
+.wip-project {
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 0 4px 4px 0;
+}
+
+.wip-status {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.wip-status.data-collection {
+    background-color: #e67e22; /* 橙色 */
+}
+
+.wip-status.theory-dev {
+    background-color: #9b59b6; /* 紫色 */
+}
+
+.wip-status.analysis {
+    background-color: #3498db; /* 蓝色 */
+}
+
+.wip-status.writing {
+    background-color: #2ecc71; /* 绿色 */
+}
+
+.wip-description {
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.research-phase, .expected-completion {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.research-phase h4, .expected-completion h4 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.research-phase ul, .expected-completion ul {
+    padding-left: 20px;
+}
+
+.research-phase li, .expected-completion li {
+    margin-bottom: 5px;
+}
 
 /* CV Page Specific Styles */
 .btn.download-btn {

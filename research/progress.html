@@ -38,61 +38,77 @@
     <main class="main-container">
         <section class="research-section">
             <h1>Work in Progress</h1>
-<!-- 
-研究项目进度展示HTML模板
-结构说明：
-1. 整个进度容器使用<div class="progress-container">
-2. 每个项目使用<div class="progress-item">包裹
-3. 每个项目包含:
-   - 项目标题和状态 <div class="progress-header">
-   - 作者信息 <p class="authors">
-   - 项目描述 <div class="progress-description">
-   - 详细信息部分（可选）<div class="progress-details">
--->
-            <div class="progress-container">
-                <div class="progress-item">
-                    <div class="progress-header">
-                        <h3>Local Government Financing Vehicles and Financial Stability in China</h2>
-                        <span class="progress-status"><i class="fas fa-chart-line"></i> Data Collection Stage</span>
-                    </div>
-                    <p class="authors">with xxx and xxx</p>
-                    <div class="progress-description">
-                        <p>This project investigates how local government financing vehicles (LGFVs) in China interact with the formal banking sector, and their role in propagating financial risk. We are currently collecting loan-level data from 15 provincial governments.</p>
-                        
-                        <div class="progress-details">
-                            <div class="progress-milestones">
-                                <h4><i class="fas fa-flag-checkered"></i> Milestones</h4>
-                                <ul>
-                                    <li><i class="far fa-check-circle"></i> Theoretical framework completed (2023-03)</li>
-                                    <li><i class="far fa-check-circle"></i> Preliminary data collected (2023-06)</li>
-                                    <li><i class="far fa-circle"></i> Complete data collection (Expected 2023-12)</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="progress-collaborators">
-                                <h4><i class="fas fa-users"></i> Collaborators</h4>
-                                <ul>
-                                    <li>Prof. xxx (PBC School of Finance, Tsinghua)</li>
-                                    <li>Prof. xxx (Princeton University)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+        <!-- 
+        Work in Progress 项目展示模板
+        结构说明：
+        1. 每个项目用 <div class="wip-project"> 包裹
+        2. 包含以下部分:
+           - 项目标题 <h3>
+           - 合作者 <p class="authors">
+           - 状态标签 <span class="wip-status">
+           - 项目描述 <div class="wip-description">
+           - 研究阶段 <div class="research-phase">
+           - 计划完成时间 <div class="expected-completion">
+        -->
+
+        <div class="wip-project">
+            <h3>Climate Risk and Municipal Bond Pricing: Evidence from Coastal Cities</h3>
+            <p class="authors">with XXX, XXX and XXX</p>
+            
+            <!-- 研究状态标签 -->
+            <span class="wip-status data-collection"><i class="fas fa-database"></i> Data Collection</span>
+            
+            <div class="wip-description">
+                <p>This project examines how climate change risks are priced in municipal bonds issued by coastal cities. We are developing a novel dataset combining sea-level rise projections with municipal bond issuance data.</p>
+                
+                <!-- 研究阶段详情 -->
+                <div class="research-phase">
+                    <h4><i class="fas fa-tasks"></i> Current Phase:</h4>
+                    <ul>
+                        <li>Collecting bond issuance data from 2010-2023</li>
+                        <li>Processing NOAA coastal flooding projections</li>
+                        <li>Developing hedonic pricing model</li>
+                    </ul>
                 </div>
                 
-                <div class="progress-item">
-                    <div class="progress-header">
-                        <h3>The Impact of Digital Currency on Traditional Banking</h2>
-                        <span class="progress-status"><i class="fas fa-lightbulb"></i> Theoretical Framework Development</span>
-                    </div>
-                    <p class="authors">with xxx and xxx</p>
-                    <div class="progress-description">
-                        <p>Developing a theoretical model to understand how central bank digital currencies (CBDCs) may disrupt traditional bank intermediation, with a focus on deposit competition and lending behavior.</p>
-                    </div>
+                <!-- 计划完成时间 -->
+                <div class="expected-completion">
+                    <h4><i class="far fa-calendar-alt"></i> Expected Milestones:</h4>
+                    <ul>
+                        <li>Complete data collection: Q3 2024</li>
+                        <li>First draft: Q1 2025</li>
+                    </ul>
                 </div>
             </div>
+        </div>
+
+        <div class="wip-project">
+            <h3>FinTech Adoption and Bank Branch Closures: A National Study</h3>
+            <p class="authors">with XXX, XXX, XXX and XXX</p>
             
+            <span class="wip-status theory-dev"><i class="fas fa-lightbulb"></i> Theory Development</span>
             
+            <div class="wip-description">
+                <p>Investigating the causal relationship between mobile payment adoption and physical bank branch closures across U.S. counties, with focus on financial inclusion implications.</p>
+                
+                <div class="research-phase">
+                    <h4><i class="fas fa-tasks"></i> Current Phase:</h4>
+                    <ul>
+                        <li>Literature review on branch closure determinants</li>
+                        <li>Building theoretical framework</li>
+                        <li>Identifying instrumental variables</li>
+                    </ul>
+                </div>
+                
+                <div class="expected-completion">
+                    <h4><i class="far fa-calendar-alt"></i> Expected Milestones:</h4>
+                    <ul>
+                        <li>Complete theoretical model: Q4 2024</li>
+                        <li>Begin empirical analysis: Q2 2025</li>
+                    </ul>
+                </div>
+            </div>            
+                       
             <div class="back-link">
                 <a href="index.html" class="btn"><i class="fas fa-arrow-left"></i> Back to Research</a>
             </div>
