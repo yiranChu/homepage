@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name - All Publications</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>Name</h1>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="index.html" class="active">Research <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="selected.html">Selected Publications</a>
+                            <a href="all.html" class="active">All Publications</a>
+                            <a href="working.html">Working Papers</a>
+                            <a href="progress.html">Work in Progress</a>
+                        </div>
+                    </li>
+                    <li><a href="../teaching.html">Teaching & Services</a></li>
+                    <!-- <li><a href="../presentations.html">Presentations</a></li> -->
+                    <li><a href="../awards.html">Awards & Grants</a></li>
+                    <li><a href="../cv.html">CV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="research-section">
+            <h1>All Publications</h1>
+            
+            <div class="language-toggle">
+                <button class="btn active" onclick="showEnglish()">English Journals</button>
+                <button class="btn" onclick="showChinese()">Chinese Journals</button>
+            </div>
+            
+            <div id="english-publications">
+                <h3>English Publications</h3>
+                
+<!-- 
+英文出版物列表HTML模板
+结构说明：
+1. 整个列表包含在<div>容器中，类名为"english-publications"
+2. 每个出版物是一个<div>元素，类名为"publication"
+3. 每个出版物包含:
+   - 标题(带链接) <h3><a>
+   - 作者列表 <p class="authors">
+   - 期刊信息 <p class="journal">
+-->
+                <div class="publication">
+                    <!-- 论文标题链接到DOI，在新标签页打开 -->
+                    <h3><a href="https://doi.org/10.xxxx/虚构DOI12345" target="_blank">Digital Transformation and Firm Productivity: Evidence from Manufacturing Sector</a></h3>
+                    <!-- 作者列表，使用"with"表示合作者 -->
+                    <p class="authors">with John Smith, Emma Johnson & Michael Brown</p>
+                    <!-- 期刊信息，加粗期刊名，发表日期 -->
+                    <p class="journal"><strong>Journal of Economic Perspectives</strong>, Jan 2025</p>
+                </div>
+
+                <div class="publication">
+                    <h3><a href="https://doi.org/10.xxxx/虚构DOI67890" target="_blank">The Impact of Climate Risk on Bank Lending Behavior</a></h3>
+                    <p class="authors">with Sarah Lee, David Chen & Robert Wilson</p>
+                    <p class="journal"><strong>Journal of Banking and Finance</strong>, Mar 2025</p>
+                </div>                
+                <div class="publication">
+                    <h3><a href="https://doi.org/10.xxxx/虚构DOI13579" target="_blank">Urbanization and Income Inequality in China: A Regional Analysis</a></h3>
+                    <p class="authors">with Li Wei, Zhang Ming & Wang Fang</p>
+                    <p class="journal><strong>China Economic Review</strong>, Feb 2025</p>
+                </div>
+
+                <div class="publication">
+                    <h3><a href="https://doi.org/10.xxxx/虚构DOI24680" target="_blank">Education Policy Reform and Student Outcomes: Longitudinal Evidence</a></h3>
+                    <p class="authors">with Jennifer Adams, Thomas Baker & Maria Garcia</p>
+                    <p class="journal"><strong>Journal of Public Economics</strong>, Apr 2025</p>
+                </div>
+            </div>
+
+<!-- 
+中文期刊出版物列表HTML模板
+结构说明：
+1. 整个列表包含在<div>容器中
+2. 每个出版物是一个<div>元素，类名为"publication"
+3. 每个出版物包含:
+   - 中文标题(带链接) <h3><a>
+   - 中文作者列表 <p class="authors">
+   - 中文期刊信息 <p class="journal">
+   - 英文翻译信息 <p class="translation"> (可选)
+-->
+
+
+            <div id="chinese-publications" style="display: none;">
+                <h3>Chinese Publications</h3>
+                <div class="publication">
+                    <h3><a href="https://doi.org/10.xxxx/001" target="_blank">金融科技对商业银行风险控制的影响机制研究</a></h3>
+                    <p class="authors">with 作者一, 作者二 & 作者三</p>
+                    <p class="journal"><strong>金融研究</strong>, 2025</p>
+                    <p class="translation">The Impact of FinTech on Commercial Bank Risk Control: Mechanism and Evidence, with Author One, Author Two & Author Three, <em>Journal of Financial Research</em>, 2025 (in Chinese)</p>
+                </div>
+
+                <div class="publication">
+                    <h3><a href="https://doi.org/10.xxxx/002" target="_blank">绿色金融政策对重污染企业转型的影响研究</a></h3>
+                    <p class="authors">with 作者一, 作者二, 作者三 & 作者四</p>
+                    <p class="journal"><strong>经济研究</strong>, 2024</p>
+                    <p class="translation">Green Finance Policy and the Transformation of Heavy Pollution Enterprises: Empirical Evidence from China, with Author One, Author Two, Author Three & Author Four, <em>Economic Research Journal</em>, 2024 (in Chinese)</p>
+                </div>
+
+                <div class="publication">
+                    <h3><a href="https://doi.org/10.xxxx/003" target="_blank">数字化转型对企业创新效率的影响——基于专利数据的分析</a></h3>
+                    <p class="authors">with 作者一 & 作者二</p>
+                    <p class="journal"><strong>管理世界</strong>, 2023</p>
+                    <p class="translation">Digital Transformation and Firm Innovation Efficiency: Evidence from Patent Data, with Author One & Author Two, <em>Management World</em>, 2023 (in Chinese)</p>
+                </div>
+
+                <div class="publication">
+                    <h3><a href="https://doi.org/10.xxxx/004" target="_blank">宏观审慎政策与商业银行系统性风险防范</a></h3>
+                    <p class="authors">with 作者一, 作者二, 作者三, 作者四 & 作者五</p>
+                    <p class="journal"><strong>世界经济</strong>, 2022</p>
+                    <p class="translation">Macroprudential Policy and Prevention of Systemic Risks in Commercial Banks, with Author One, Author Two, Author Three, Author Four & Author Five, <em>The Journal of World Economy</em>, 2022 (in Chinese)</p>
+                </div>
+                
+            </div>
+            
+            <div class="back-link">
+                <a href="index.html" class="btn"><i class="fas fa-arrow-left"></i> Back to Research</a>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="../js/script.js"></script>
+    <script>
+        function showEnglish() {
+            document.getElementById('english-publications').style.display = 'block';
+            document.getElementById('chinese-publications').style.display = 'none';
+            document.querySelector('.language-toggle .btn:nth-child(1)').classList.add('active');
+            document.querySelector('.language-toggle .btn:nth-child(2)').classList.remove('active');
+        }
+        
+        function showChinese() {
+            document.getElementById('english-publications').style.display = 'none';
+            document.getElementById('chinese-publications').style.display = 'block';
+            document.querySelector('.language-toggle .btn:nth-child(1)').classList.remove('active');
+            document.querySelector('.language-toggle .btn:nth-child(2)').classList.add('active');
+        }
+    </script>
+</body>
+</html>

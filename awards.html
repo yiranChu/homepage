@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name - Awards & Grants</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            padding-top: 80px; 
+        }        
+        .content-section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            font-size: 24px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            margin-top: 40px;
+        }
+        .awards-category {
+            margin-bottom: 30px;
+        }
+        .category-title {
+            font-size: 20px;
+            color: #2980b9;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .award-item {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.6;
+        }
+        .award-item:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+        .award-name {
+            font-weight: 600;
+            color: #34495e;
+        }
+        .award-conference {
+            color: #7f8c8d;
+            font-style: italic;
+            float: right;
+        }
+        .grant-item {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .grant-title {
+            font-weight: 600;
+            color: #34495e;
+            margin-bottom: 5px;
+        }
+        .grant-details {
+            color: #7f8c8d;
+            margin-bottom: 5px;
+        }
+        .grant-period {
+            color: #16a085;
+            font-style: italic;
+            float: right;
+        }
+        .chinese-translation {
+            color: #666;
+            margin-top: 5px;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>Name</h1>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="research/index.html">Research <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="research/selected.html">Selected Publications</a>
+                            <a href="research/all.html">All Publications</a>
+                            <a href="research/working.html">Working Papers</a>
+                            <a href="research/progress.html">Work in Progress</a>
+                        </div>
+                    </li>
+                    <li><a href="teaching.html">Teaching & Services</a></li>
+                    <!-- <li><a href="presentations.html">Presentations</a></li> -->
+                    <li><a href="awards.html" class="active">Awards & Grants</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content-section">
+        <h2 class="section-title">Honors & Awards</h2>
+        
+        <div class="awards-category">
+<!-- 
+学术奖项展示HTML模板
+结构说明：
+1. 整个奖项列表包含在<div class="awards-category">容器中
+2. 每个奖项是一个<div class="award-item">元素
+3. 每个奖项包含:
+   - 英文奖项名称 <span class="award-name">
+   - 中文翻译(可选) <div class="chinese-translation">
+   - 会议信息(可选) <span class="award-conference">
+-->
+            <div class="award-item">
+                <span class="award-name">Excellence in Teaching Award at XXX University</span>
+                <div class="chinese-translation">XXX大学卓越教学奖</div>
+            </div>
+            
+            <!-- 示例2: 荣誉称号 -->
+            <div class="award-item">
+                <span class="award-name">Distinguished Professor of XXX at XXX University</span>
+                <div class="chinese-translation">XXX大学XXX特聘教授</div>
+            </div>
+            
+            <!-- 示例3: 论文指导奖 -->
+            <div class="award-item">
+                <span class="award-name">Outstanding Thesis Advisor Award at XXX Conference</span>
+                <div class="chinese-translation">XXX会议优秀论文指导奖</div>
+            </div>
+            
+            <!-- 示例4: 最佳论文奖(含会议信息) -->
+            <div class="award-item">
+                <span class="award-name">Best Paper Award at the 15th International Conference on XXX</span>
+                <span class="award-conference">2023, Singapore</span>
+            </div>
+            
+            <!-- 示例5: 研究类奖项 -->
+            <div class="award-item">
+                <span class="award-name">Young Researcher Award from XXX Association</span>
+                <div class="chinese-translation">XXX协会青年研究学者奖</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Grants & Scholarships</h2>
+<!-- 
+科研项目资助展示HTML模板
+结构说明：
+1. 整个资助列表包含在<div>容器中
+2. 每个资助项目是一个<div class="grant-item">元素
+3. 每个资助项目包含:
+   - 项目名称/类型 <div class="grant-title">
+   - 资助期限 <div class="grant-period">
+   - 中文翻译(可选) <div class="chinese-translation">
+-->        
+    <div class="grants-list">
+        <!-- 示例1: 国家杰出青年科学基金 -->
+        <div class="grant-item">
+            <div class="grant-title">Recipient of the National Science Foundation for Distinguished Young Scholars (NSFC.XXXXXXX)</div>
+            <div class="grant-period">2024 - 2027</div>
+            <div class="chinese-translation">主持国家自然科学基金杰出青年项目（批准号：XXXXXXX）</div>
+        </div>
+        
+        <!-- 示例2: 国家自然科学基金面上项目 -->
+        <div class="grant-item">
+            <div class="grant-title">Recipient of the General Program of the National Natural Science Foundation (NSFC.XXXXXXX)</div>
+            <div class="grant-period">2023 - 2026</div>
+            <div class="chinese-translation">主持国家自然科学基金面上项目（批准号：XXXXXXX）</div>
+        </div>
+
+        <!-- 示例3: 国家自然科学基金青年项目 -->
+        <div class="grant-item">
+            <div class="grant-title">Recipient of the Young Scientists Fund of the National Natural Science Foundation (NSFC.XXXXXXX)</div>
+            <div class="grant-period">2019 - 2021</div>
+            <div class="chinese-translation">主持国家自然科学基金青年项目（批准号：XXXXXXX）</div>
+        </div>
+
+        <!-- 示例4: 人才计划项目 -->
+        <div class="grant-item">
+            <div class="grant-title">The Xth Young Elite Scientists Sponsorship by XXX Association</div>
+            <div class="grant-period">2022</div>
+            <div class="chinese-translation">入选第X届XXX协会"青年人才托举工程"</div>
+        </div>
+
+        <!-- 示例5: 国际合作项目 -->
+        <div class="grant-item">
+            <div class="grant-title">International Collaborative Research Grant from XXX Foundation</div>
+            <div class="grant-period">2023 - 2025</div>
+            <div class="chinese-translation">获XXX基金会国际合作研究资助</div>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

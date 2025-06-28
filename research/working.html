@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name - Working Papers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>Name</h1>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="index.html" class="active">Research <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="selected.html">Selected Publications</a>
+                            <a href="all.html">All Publications</a>
+                            <a href="working.html" class="active">Working Papers</a>
+                            <a href="progress.html">Work in Progress</a>
+                        </div>
+                    </li>
+                    <li><a href="../teaching.html">Teaching & Services</a></li>
+                    <!-- <li><a href="../presentations.html">Presentations</a></li> -->
+                    <li><a href="../awards.html">Awards & Grants</a></li>
+                    <li><a href="../cv.html">CV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="research-section">
+            <h1>Working Papers</h1>
+<!-- 
+工作论文列表HTML模板
+结构说明：
+1. 整个列表包含在<div>容器中
+2. 每个工作论文是一个<div>元素，类名为"publication"
+3. 每个工作论文包含:
+   - 标题(带链接) <h3><a>
+   - 作者列表 <p class="authors"> (使用xxx代替真实姓名)
+   - 期刊信息 <p class="journal"> (注明是NBER或SSRN工作论文)
+-->
+            <div class="publication">
+                <h3><a href="https://ssrn.com/abstract=0000001" target="_blank">Climate Risk and Municipal Bond Pricing: Evidence from Coastal Cities</a></h3>
+                <p class="authors">with xxx, xxx and xxx</p>
+                <p class="journal"><strong>SSRN Working Paper</strong>, 0000001</p>
+            </div>
+
+            <div class="publication">
+                <h3><a href="https://www.nber.org/papers/w00002" target="_blank">FinTech Adoption and Bank Branch Closures: A National Study</a></h3>
+                <p class="authors">with xxx, xxx, xxx and xxx</p>
+                <p class="journal"><strong>NBER Working Paper</strong>, 00002</p>
+            </div>
+
+            <div class="publication">
+                <h3><a href="https://ssrn.com/abstract=0000003" target="_blank">The Unintended Consequences of Banking Regulations on SME Lending</a></h3>
+                <p class="authors">with xxx and xxx</p>
+                <p class="journal"><strong>SSRN Working Paper</strong>, 0000003</p>
+            </div>
+
+            <div class="publication">
+                <h3><a href="https://www.nber.org/papers/w00004" target="_blank">ESG Ratings Divergence and Institutional Investment Decisions</a></h3>
+                <p class="authors">with xxx, xxx, xxx, xxx and xxx</p>
+                <p class="journal"><strong>NBER Working Paper</strong>, 00004</p>
+            </div> 
+            
+            <div class="back-link">
+                <a href="index.html" class="btn"><i class="fas fa-arrow-left"></i> Back to Research</a>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="../js/script.js"></script>
+    <script>
+        function toggleAbstract(id) {
+            const abstract = document.getElementById(id);
+            const button = abstract.previousElementSibling;
+            
+            if (abstract.style.display === 'none') {
+                abstract.style.display = 'block';
+                button.innerHTML = '<i class="fas fa-chevron-up"></i> Hide Abstract';
+                button.classList.add('active');
+            } else {
+                abstract.style.display = 'none';
+                button.innerHTML = '<i class="fas fa-chevron-down"></i> Show Abstract';
+                button.classList.remove('active');
+            }
+        }
+    </script>
+</body>
+</html>

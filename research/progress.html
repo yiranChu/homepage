@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name - Work in Progress</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>Name</h1>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="index.html" class="active">Research <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="selected.html">Selected Publications</a>
+                            <a href="all.html">All Publications</a>
+                            <a href="working.html">Working Papers</a>
+                            <a href="progress.html" class="active">Work in Progress</a>
+                        </div>
+                    </li>
+                    <li><a href="../teaching.html">Teaching & Services</a></li>
+                    <!-- <li><a href="../presentations.html">Presentations</a></li> -->
+                    <li><a href="../awards.html">Awards & Grants</a></li>
+                    <li><a href="../cv.html">CV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="research-section">
+            <h1>Work in Progress</h1>
+<!-- 
+研究项目进度展示HTML模板
+结构说明：
+1. 整个进度容器使用<div class="progress-container">
+2. 每个项目使用<div class="progress-item">包裹
+3. 每个项目包含:
+   - 项目标题和状态 <div class="progress-header">
+   - 作者信息 <p class="authors">
+   - 项目描述 <div class="progress-description">
+   - 详细信息部分（可选）<div class="progress-details">
+-->
+            <div class="progress-container">
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <h2>Local Government Financing Vehicles and Financial Stability in China</h2>
+                        <span class="progress-status"><i class="fas fa-chart-line"></i> Data Collection Stage</span>
+                    </div>
+                    <p class="authors">with xxx and xxx</p>
+                    <div class="progress-description">
+                        <p>This project investigates how local government financing vehicles (LGFVs) in China interact with the formal banking sector, and their role in propagating financial risk. We are currently collecting loan-level data from 15 provincial governments.</p>
+                        
+                        <div class="progress-details">
+                            <div class="progress-milestones">
+                                <h4><i class="fas fa-flag-checkered"></i> Milestones</h4>
+                                <ul>
+                                    <li><i class="far fa-check-circle"></i> Theoretical framework completed (2023-03)</li>
+                                    <li><i class="far fa-check-circle"></i> Preliminary data collected (2023-06)</li>
+                                    <li><i class="far fa-circle"></i> Complete data collection (Expected 2023-12)</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="progress-collaborators">
+                                <h4><i class="fas fa-users"></i> Collaborators</h4>
+                                <ul>
+                                    <li>Prof. xxx (PBC School of Finance, Tsinghua)</li>
+                                    <li>Prof. xxx (Princeton University)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <h2>The Impact of Digital Currency on Traditional Banking</h2>
+                        <span class="progress-status"><i class="fas fa-lightbulb"></i> Theoretical Framework Development</span>
+                    </div>
+                    <p class="authors">with xxx and xxx</p>
+                    <div class="progress-description">
+                        <p>Developing a theoretical model to understand how central bank digital currencies (CBDCs) may disrupt traditional bank intermediation, with a focus on deposit competition and lending behavior.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="back-link">
+                <a href="index.html" class="btn"><i class="fas fa-arrow-left"></i> Back to Research</a>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

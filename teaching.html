@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name - Teaching & Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            padding-top: 80px; 
+        }        
+        .content-section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            font-size: 24px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        .teaching-level {
+            margin-bottom: 30px;
+        }
+        .level-title {
+            font-size: 20px;
+            color: #2980b9;
+            margin-bottom: 15px;
+        }
+        .course-item {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .course-name {
+            font-weight: 600;
+            color: #34495e;
+        }
+        .course-period {
+            color: #7f8c8d;
+            font-style: italic;
+            float: right;
+        }
+        .services-category {
+            margin-bottom: 30px;
+        }
+        .category-title {
+            font-size: 20px;
+            color: #2980b9;
+            margin-bottom: 15px;
+        }
+        .service-item {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .service-name {
+            font-weight: 600;
+            color: #34495e;
+        }
+        .service-position {
+            color: #16a085;
+        }
+        .service-period {
+            color: #7f8c8d;
+            font-style: italic;
+            float: right;
+        }
+        @media (max-width: 768px) {
+            .service-period {
+                float: none;
+                display: block;
+                margin-top: 5px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>Name</h1>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="research/index.html">Research <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="research/selected.html">Selected Publications</a>
+                            <a href="research/all.html">All Publications</a>
+                            <a href="research/working.html">Working Papers</a>
+                            <a href="research/progress.html">Work in Progress</a>
+                        </div>
+                    </li>
+                    <li><a href="teaching.html" class="active">Teaching & Services</a></li>
+                    <!-- <li><a href="presentations.html">Presentations</a></li> -->
+                    <li><a href="awards.html">Awards & Grants</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content-section">
+        <h2 class="section-title">Teaching</h2>
+<!-- 
+教学课程展示HTML模板
+结构说明：
+1. 按教学层次分组，每个层次用<div class="teaching-level">包裹
+2. 每个层次包含:
+   - 层次标题 <h3 class="level-title">
+   - 多个课程项 <div class="course-item">
+3. 每个课程项包含:
+   - 课程名称 <span class="course-name">
+   - 授课时间(可选) <span class="course-period">
+-->        
+        <!-- 博士/硕士层次 -->
+        <div class="teaching-level">
+            <h3 class="level-title">Ph.D./M.Phil of XXX</h3>
+            <div class="course-item">
+                <span class="course-name">Advanced Topics in XXX Research</span>
+                <span class="course-period">Fall 2023 – Present</span>
+            </div>
+            <div class="course-item">
+                <span class="course-name">Seminar in XXX Methodology</span>
+                <span class="course-period">Spring 2022 – Present</span>
+            </div>
+        </div>
+        
+        <!-- 专业硕士层次 -->
+        <div class="teaching-level">
+            <h3 class="level-title">Master of XXX</h3>
+            <div class="course-item">
+                <span class="course-name">XXX Theory and Practice</span>
+                <span class="course-period">Fall 2023 – Present</span>
+            </div>
+            <div class="course-item">
+                <span class="course-name">Applied XXX Modeling</span>
+                <!-- 无授课时间的课程 -->
+            </div>
+            <div class="course-item">
+                <span class="course-name">International XXX, XXX-XXX Joint Program</span>
+                <span class="course-period">Spring 2024 – Present</span>
+            </div>
+        </div>
+        
+        <!-- 本科层次 -->
+        <div class="teaching-level">
+            <h3 class="level-title">Undergraduate of XXX</h3>
+            <div class="course-item">
+                <span class="course-name">Introduction to XXX</span>
+                <span class="course-period">Fall 2021 – Present</span>
+            </div>
+            <div class="course-item">
+                <span class="course-name">XXX Technology Applications</span>
+                <span class="course-period">Spring 2023 – Present</span>
+            </div>
+            <div class="course-item">
+                <span class="course-name">Capstone Project in XXX</span>
+            </div>
+        </div>       
+
+        <h2 class="section-title">Services</h2>
+<!-- 
+学术服务展示HTML模板
+结构说明：
+1. 按服务类型分组，每个类别用<div class="services-category">包裹
+2. 每个类别包含:
+   - 类别标题 <h3 class="category-title">
+   - 多个服务项 <div class="service-item">
+3. 每个服务项包含:
+   - 机构/期刊名称 <span class="service-name">
+   - 职位/角色 <span class="service-position">
+   - 服务时间(可选) <span class="service-period">
+-->
+        <!-- 编辑职务 -->
+        <div class="services-category">
+            <h3 class="category-title">Editorial Appointments</h3>
+            <div class="service-item">
+                <span class="service-name">Journal of XXX Studies</span> – 
+                <span class="service-position">Associate Editor</span> 
+                <span class="service-period">Since 2023</span>
+            </div>
+            <div class="service-item">
+                <span class="service-name">XXX and XXX Review | XXX与XXX评论</span> – 
+                <span class="service-position">Editorial Board Member</span> 
+                <span class="service-period">Since 2022</span>
+            </div>
+        </div>
+        
+        <!-- 会议组织 -->
+        <div class="services-category">
+            <h3 class="category-title">Conference Organizing Committee</h3>
+            <div class="service-item">
+                <span class="service-name">International Conference on XXX</span> – 
+                <span class="service-position">Program Chair</span> 
+                <span class="service-period">2024</span>
+            </div>
+            <div class="service-item">
+                <span class="service-name">XXX Annual Meeting</span> – 
+                <span class="service-position">Track Chair</span> 
+                <span class="service-period">Since 2023</span>
+            </div>
+        </div>
+        
+        <!-- 学术团体 -->
+        <div class="services-category">
+            <h3 class="category-title">Academic Affiliations</h3>
+            <div class="service-item">
+                <span class="service-name">XXX Research Center at XXX University | XXX大学XXX研究中心</span> – 
+                <span class="service-position">Research Fellow</span>
+            </div>
+            <div class="service-item">
+                <span class="service-name">XXX Society | XXX学会</span> – 
+                <span class="service-position">Executive Committee Member</span>
+            </div>
+        </div>
+    </div>  
+
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
